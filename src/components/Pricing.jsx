@@ -14,7 +14,7 @@ const Pricing = () => {
         'Progress report'
       ],
       popular: false,
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-blue-800 to-blue-900'
     },
     {
       type: 'Group Class',
@@ -28,7 +28,7 @@ const Pricing = () => {
         'Cost effective'
       ],
       popular: true,
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-blue-700 to-blue-800'
     }
   ];
 
@@ -39,7 +39,7 @@ const Pricing = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Price List
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-blue-800 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600">
             Pilih paket yang sesuai dengan kebutuhan Anda
           </p>
@@ -50,11 +50,11 @@ const Pricing = () => {
             <div 
               key={index}
               className={`relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ${
-                plan.popular ? 'ring-4 ring-purple-500' : ''
+                plan.popular ? 'ring-4 ring-blue-700' : ''
               }`}
             >
               {plan.popular && (
-                <div className="absolute top-0 right-0 bg-purple-500 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">
+                <div className="absolute top-0 right-0 bg-blue-800 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">
                   Popular
                 </div>
               )}

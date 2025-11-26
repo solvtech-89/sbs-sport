@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -34,9 +34,26 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-semibold mb-1">Alamat</h4>
                     <p className="text-blue-100">
-                      Jl.Gunung Merapi No 10 Rt 02 Rw 05<br />
-                      Bancarkembar Purwokerto
+                      Jl.Gunung Merapi No 10 Rt.02 Rw.05<br />
+                      Bancarkembar, Purwokerto Utara, Banyumas, Jawa Tengah
                     </p>
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-white/20">
+                      <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold mb-1">Telepon</h4>
+                    <a href="tel:082223608424" className="text-blue-100 hover:text-white transition">
+                      082223608424
+                    </a>
                   </div>
                 </div>
 
@@ -52,11 +69,8 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-semibold mb-2">Media Sosial</h4>
                     <div className="space-y-2">
-                      <a href="https://instagram.com/daffa_him" target="_blank" rel="noopener noreferrer" className="block text-blue-100 hover:text-white transition">
-                        📱 @daffa_him
-                      </a>
-                      <a href="https://instagram.com/sbs_SportAcademi" target="_blank" rel="noopener noreferrer" className="block text-blue-100 hover:text-white transition">
-                        📱 @sbs_SportAcademi
+                      <a href="https://instagram.com/sbs_privatsport" target="_blank" rel="noopener noreferrer" className="block text-blue-100 hover:text-white transition">
+                        📱 @sbs_privatsport
                       </a>
                     </div>
                   </div>
@@ -106,10 +120,11 @@ const Contact = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition"
                 >
                   <option value="">Pilih olahraga</option>
-                  <option value="climb">Sport Climb</option>
+                  <option value="climb">Sport Climbing</option>
                   <option value="inline">Inline Skate</option>
                   <option value="skateboard">Skate Board</option>
                   <option value="atletik">Atletik</option>
+                  <option value="gymnastic">Gymnastic</option>
                   <option value="swimming">Swimming</option>
                 </select>
               </div>
@@ -126,7 +141,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="w-full bg-gradient-to-r from-blue-900 to-blue-800 text-white py-4 rounded-lg font-semibold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Kirim Pesan
               </button>

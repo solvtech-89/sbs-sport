@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             About Us
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-blue-800 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -29,7 +29,7 @@ const About = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-900 text-white">
                     <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -37,13 +37,13 @@ const About = () => {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg font-semibold text-gray-900">Multi-Discipline Sports</h5>
-                  <p className="text-gray-600">5 cabang olahraga dalam satu akademi</p>
+                  <p className="text-gray-600">6 cabang olahraga dalam satu akademi</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-900 text-white">
                     <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -57,7 +57,7 @@ const About = () => {
 
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-900 text-white">
                     <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>

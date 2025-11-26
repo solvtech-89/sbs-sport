@@ -7,28 +7,28 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white">
+    <section id="home" className="pt-20 bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             STEP BY STEP<br />SPORT ACADEMY
           </h1>
-          <p className="text-xl md:text-2xl mb-4 text-blue-100">
-            Pursue your <span className="font-bold text-yellow-300">SPORTING DREAM</span>
+          <p className="text-xl md:text-2xl mb-4 text-blue-50">
+            Pursue your <span className="font-bold text-yellow-400">SPORTING DREAM</span>
           </p>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            just like your <span className="font-bold text-yellow-300">ACADEMICS</span>
+          <p className="text-xl md:text-2xl mb-8 text-blue-50">
+            just like your <span className="font-bold text-yellow-400">ACADEMICS</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
             <button 
               onClick={() => scrollToSection('programs')}
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition shadow-lg"
+              className="bg-white text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition shadow-lg hover:shadow-xl"
             >
               Explore Programs
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-900 transition"
             >
               Contact Us
             </button>
