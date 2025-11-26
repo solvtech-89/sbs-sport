@@ -33,14 +33,14 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Price List
           </h2>
-          <div className="w-24 h-1 bg-blue-800 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600">
+          <div className="w-32 h-1.5 bg-gradient-to-r from-blue-600 via-blue-800 to-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
             Pilih paket yang sesuai dengan kebutuhan Anda
           </p>
         </div>
@@ -49,32 +49,35 @@ const Pricing = () => {
           {pricingPlans.map((plan, index) => (
             <div 
               key={index}
-              className={`relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ${
-                plan.popular ? 'ring-4 ring-blue-700' : ''
+              className={`relative bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 border ${
+                plan.popular ? 'ring-4 ring-blue-700 border-blue-300' : 'border-gray-100'
               }`}
             >
               {plan.popular && (
-                <div className="absolute top-0 right-0 bg-blue-800 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">
+                <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-800 to-blue-900 text-white px-5 py-2 text-sm font-bold rounded-bl-2xl shadow-lg z-10">
                   Popular
                 </div>
               )}
               
-              <div className={`bg-gradient-to-r ${plan.color} p-8 text-white`}>
-                <h3 className="text-3xl font-bold mb-2">{plan.type}</h3>
-                <div className="flex items-end mb-2">
-                  <span className="text-5xl font-bold">Rp {plan.price}</span>
+              <div className={`bg-gradient-to-br ${plan.color} p-10 text-white relative overflow-hidden`}>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="relative z-10">
+                  <h3 className="text-3xl font-bold mb-3">{plan.type}</h3>
+                  <div className="flex items-end mb-3">
+                    <span className="text-6xl font-extrabold">Rp {plan.price}</span>
+                  </div>
+                  <p className="text-blue-100 text-lg font-medium">{plan.duration}</p>
                 </div>
-                <p className="text-blue-100 text-lg">{plan.duration}</p>
               </div>
 
-              <div className="p-8">
-                <ul className="space-y-4 mb-8">
+              <div className="p-10">
+                <ul className="space-y-4 mb-10">
                   {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <svg className="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <li key={idx} className="flex items-start group/item">
+                      <svg className="h-6 w-6 text-green-600 mr-3 flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-700 text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -84,7 +87,7 @@ const Pricing = () => {
                     const element = document.getElementById('contact');
                     element?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className={`w-full bg-gradient-to-r ${plan.color} text-white py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300`}
+                  className={`w-full bg-gradient-to-r ${plan.color} text-white py-4 rounded-xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:scale-105`}
                 >
                   Daftar Sekarang
                 </button>

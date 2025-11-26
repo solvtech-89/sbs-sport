@@ -41,14 +41,14 @@ const Sports = () => {
   ];
 
   return (
-    <section id="sports" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+    <section id="sports" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Our Sports
           </h2>
-          <div className="w-24 h-1 bg-blue-800 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600">
+          <div className="w-32 h-1.5 bg-gradient-to-r from-blue-600 via-blue-800 to-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
             Pilih dari 6 cabang olahraga yang kami tawarkan
           </p>
         </div>
@@ -57,14 +57,21 @@ const Sports = () => {
           {sports.map((sport) => (
             <div 
               key={sport.id}
-              className="bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-blue-200"
+              className="group bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 hover:border-blue-300 relative overflow-hidden"
             >
-              <div className="text-6xl mb-4">{sport.icon}</div>
-              <div className="flex items-center mb-3">
-                <span className="text-2xl font-bold text-blue-800 mr-2">{sport.id}.</span>
-                <h3 className="text-2xl font-bold text-gray-900">{sport.name}</h3>
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 to-blue-50/0 group-hover:from-blue-50/50 group-hover:to-transparent transition-all duration-500 rounded-3xl"></div>
+              
+              <div className="relative z-10">
+                <div className="text-7xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                  {sport.icon}
+                </div>
+                <div className="flex items-center mb-4">
+                  <span className="text-3xl font-extrabold text-blue-800 mr-3">{sport.id}.</span>
+                  <h3 className="text-2xl font-bold text-gray-900">{sport.name}</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed text-base">{sport.description}</p>
               </div>
-              <p className="text-gray-700 leading-relaxed">{sport.description}</p>
             </div>
           ))}
         </div>
